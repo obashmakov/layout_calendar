@@ -1,0 +1,19 @@
+@for $i from 1 through 31 {
+  .calendar div:nth-child(#{$i}) {
+    &::after {
+      content: "#{$i}";
+    }
+  }
+}
+
+@each $day, $num in $days {
+  .#{$day} div:first-child {
+    margin-left: $num * 101px;
+  }
+}
+
+@each $days, $nums in $days-in-months {
+  .#{$days} div:nth-child(n + #{$nums}) {
+    display: none;
+  }
+}

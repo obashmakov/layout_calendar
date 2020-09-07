@@ -1,0 +1,24 @@
+$font: "Arial", sans-serif;
+$size: 100px;
+
+$days: (
+  calendar-mon: 0,
+  calendar-tue: 1,
+  calendar-wed: 2,
+  calendar-thu: 3,
+  calendar-fri: 4,
+  calendar-sat: 5,
+  calendar-sun: 6
+);
+
+$days-in-months: (
+  calendar-28: 29,
+  calendar-29: 30,
+  calendar-30: 31,
+  calender-31: 32
+);
+
+@mixin center-text {
+  text-align: center;
+  line-height: $size;
+}

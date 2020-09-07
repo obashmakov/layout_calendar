@@ -1,0 +1,22 @@
+.calendar {
+  div {
+    width: $size;
+    height: $size;
+
+    background-color: #eee;
+    border: solid 1px black;
+    margin-right: 1px;
+    margin-bottom: 1px;
+
+    @include center-text;
+
+    cursor: pointer;
+
+    transition: background-color 500ms, transform 500ms;
+
+    &:hover {
+      transform: translateY(-20px);
+      background-color: pink;
+    }
+  }
+}
